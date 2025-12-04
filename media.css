@@ -1,0 +1,128 @@
+@media screen and (max-width: 760px) {
+
+header {
+    flex-direction: column ;
+    align-items: center;
+    text-align: center;
+    padding: 23px 0 ;
+    box-shadow: none;
+}
+
+header #title h1 {
+    font-size: 24px;
+}
+
+header ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+header ul a {
+    width: 100%;
+}
+
+header ul li {
+    font-size: 16px;
+}
+
+main {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+main aside h2 {
+    font-size: 24px;
+}
+
+main aside p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+main aside .newslatter-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+main aside .newslatter-form input{
+    width: 100%;
+    margin: 10px 0;
+}
+
+main aside .newslatter-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+main article img {
+    display: flex; /*Remove a imagem no mobile*/
+    order:2;
+    box-sizing: border-box;
+}
+
+#about .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+        box-sizing: border-box;
+}
+
+#about .container .text-content h3 {
+    font-size: 24px;
+    padding: 30px;
+}
+
+#about .container .text-content h4 {
+    font-size: 18px;
+}
+
+#about .container .text-content p {
+    font-size: 14px;
+}
+
+#about .container img.store-front {
+    display:flex;
+    order: 2;
+        box-sizing: border-box;
+}
+
+#contact-form .contact-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#contact-form .contact-form h4 {
+    font-size: 24px;
+}
+
+#contact-form .contact-form input, #contact-form .contact-form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#contact-form .contact-form button {
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+}

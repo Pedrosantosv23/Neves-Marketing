@@ -1,0 +1,308 @@
+@charset "UTF-8";
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 97% /* Ocupa 100% da largura da tela */;
+    background-color: #1b1a1a /* Cor de fundo do cabeçalho */;
+    padding: 20px /* Espaçamento interno */;
+    box-shadow: 0 2px 10px #1b1b1b /* Sombra suave */;
+    unicode-bidi: isolate;
+    font-family: "Bungee", sans-serif;
+    font-weight: normal;
+    color: #0e0c0c;
+}
+
+body {
+    font-family: "roboto", "sans-serif";
+    color: rgb(0, 0, 0);
+    font-family: "Sora", sans-serif;
+    font-style: normal;
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+
+}
+
+header {
+    padding: 20px;
+    background-color: rgb(248, 248, 248);
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+#about .container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+#about .img {
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    display: flex;
+}    
+
+h2 {
+    font-size: 56px;
+    line-height: 10px;
+}
+
+#title {
+    line-height: 35px;
+    flex-direction: column;
+    border: 2px solid color rgb(27, 26, 26);
+}
+
+ul {
+    display: flex;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+a {
+    color: rgb(34, 34, 34);
+        border: 2px solid #008ED2;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+a:hover {
+    color: #008ED2;
+    transition: 0.3s all;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+li {
+    display: inline-block;
+    margin: 15px;
+    color: #1b1b1b;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+
+h2 {
+    display: flex;
+    margin-block-start: 0,83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0%;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    font-family: "Bungee", sans-serif;
+}
+
+span {
+    color: #008ED2;
+}
+
+#contact {
+    border: 2px solid #008ED2;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+#contact:hover {
+    background-color: #008ED2;
+    color: #ffff
+}
+
+h1 {
+    font-weight: 200;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    max-width: 1200px; /* Aplica o max-width apenas ao main */
+    margin-left: 0; /* Centraliza o main */
+    margin-right: auto; /* Centraliza o main */
+    padding: 0 20px; /* Adiciona um padding lateral */
+    align-items: center; /* alinha verticalmente */
+    justify-content: space-between; /* separa imagem e texto */
+}
+
+P, section P, #about P {
+    line-height: 20px;
+    max-width: 500px;
+    font-weight: 270px;
+}
+
+img{
+    width: 580px;
+    margin-left: 60px;
+    padding: 15px;
+}
+
+.newslatter-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.newslatter-form input {
+    margin-top: 20px;
+    height: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    font-size:15px;
+    box-shadow: 0 0 0 2px #008ED2
+}
+
+input:focus {
+    box-shadow: 0 0 0 2px #59c6fa /* Traço azul claro ao focar */;
+    outline: none /* Remove o contorno padrão do navegador */;
+}
+
+.newslatter-form button {
+    background-color: #008ED2;
+    color: white;
+    margin-top: 20px;
+    height: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    box-shadow: 0 0 0 2px #008ED2;
+}
+
+.newslatter-form button:hover {
+    background-color: #59c6fa;
+}
+
+h3 {
+    font-size: 16px;
+    color:black;
+    margin-bottom: -32px;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; /* Reduzi o valor para 50px */
+    padding: 20px;
+    max-width: 1200px; /* Aplica o max-width apenas à seção #on */
+    margin-left: auto; /* Centraliza a seção #on */
+    margin-right: auto; /* Centraliza a seção #on */
+}
+
+#about .container {
+    width: 100%; /* Ocupa 100% da largura disponível */
+    display: flex;
+    justify-content: space-between; /* Espaço entre texto e imagem */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 40px; /* Adiciona um espaçamento entre texto e imagem */
+}
+
+#about .text-content {
+    flex: 1; /*Faz o texto ocupar o espaço disponível à esquerda */
+    max-width: 600px; /* Limita a largura do texto */
+}
+
+#about h4 {
+    font-weight: 700; /* Corrigi o valor de font-weight */
+    font-size: 32px;
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    color: #008ED2;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* Define uma largura máxima para manter o layout controlado */
+    margin-left: 90px; /* Adiciona uma margem à esquerda */
+    margin-right: 0; /* Remove a margem à direita */
+    padding-top: 70px; /* Espaçamento superior para o formulário */
+    text-align: left; /* Alinha o conteúdo à esquerda */
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%; /* Ajusta a largura para ocupar todo o espaço disponível */
+    margin-bottom: 15px; /* Adiciona espaçamento entre os campos */
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    box-shadow: 0 0 0 2px #008ED2;
+}
+
+.contact-form textarea {
+    height: 120px; /*Ajuste conforme o necessário*/
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    box-shadow: 0 0 0 2px #59c6fa;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #008ED2;
+    color: white;
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
+    height: 50px; /* Mantém a altura do botão */
+    padding: 15px; /* Mantém o preenchimento interno */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #59c6fa;
+}
+
+.contact-form button:hover {
+    background-color: #59c6fa;
+}
+
+.contact-form h4 {
+        font-size: 24px; /* Ajuste o tamanho da fonte */
+    font-weight: bold; /* Torna o texto em negrito */
+    color: #008ED2; /* Cor do texto, altere conforme necessário */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+footer {
+    background-color: #59C6FA; /* Cor de fundo escura */
+    color: black; /* Cor do texto clara */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno (20px top/bottom, 0 left/right) */
+    font-family: "Sora", sans-serif; /* Fonte consistente com o restante do site */
+    font-size: 14px; /* Tamanho da fonte */
+    margin-top: 50px; /* Espaçamento acima do rodapé */
+}
