@@ -118,6 +118,8 @@ h2 {
     font-weight: bold;
     unicode-bidi: isolate;
     font-family: "Bungee", sans-serif;
+    white-space: normal; /* permite quebra de linha */
+    word-wrap: break-word;
 }
 
 span {
@@ -140,15 +142,12 @@ h1 {
 }
 
 main {
-    display: flex;
+display: flex;
     flex-direction: row;
     margin-top: 50px;
-    max-width: 1200px; /* Aplica o max-width apenas ao main */
-    margin-left: 0; /* Centraliza o main */
-    margin-right: auto; /* Centraliza o main */
-    padding: 0 20px; /* Adiciona um padding lateral */
-    align-items: center; /* alinha verticalmente */
-    justify-content: space-between; /* separa imagem e texto */
+    max-width: 1200px;
+    margin-right: auto;
+    padding:  20px;
 }
 
 P, section P, #about P {
@@ -306,3 +305,8 @@ footer {
     font-size: 14px; /* Tamanho da fonte */
     margin-top: 50px; /* Espaçamento acima do rodapé */
 }
+
+.text {
+    display: flex;
+}
+
